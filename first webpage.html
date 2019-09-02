@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+    <head>
+        <title>Amazon uk webpage</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style type="text/CSS">
+        body {
+            background-color: lightgrey;
+        }
+
+        .insideLogo {
+            margin-right: 1200px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            
+        }
+        
+        li {
+            display: inline;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        a:link {
+            text-decoration: none;
+            display:inline-block
+        }
+
+        .borderInside {
+            width: 80%;
+            padding: 10px;
+            border: 2px solid black;
+            margin: 0;
+            height:2200px;
+            background-color: white;
+           
+        }
+
+        .insideLogo {
+            float:left;
+        }
+
+        form{
+            
+            top:10px;
+            margin-right: 85px;
+            top: 30px;
+            display:inline;
+        }
+
+        .right_info {
+             float:right;
+             font-family: 'Courier New', Courier, monospace;
+        }
+
+
+        hr {
+            border:2px solid blue;
+           
+        }
+
+        .button {
+            background-color: lightgrey;
+            float:left;
+            height:50px;
+            width:20%;
+            margin: 25px 30px;
+            padding: 10px 20px;
+        }
+
+        p {
+            float:right;
+            color:black;
+        }
+
+        .slideshowContainer {
+            background-color: lightgreen;
+        }
+
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+
+        .vertical-menu {
+            width: 200px;
+            float:left;
+            position:absolute;
+        }
+
+        .vertical-menu a {
+            background-color: #eee;
+            color: black;
+            display: block;
+            padding: 12px;
+            text-decoration: none;
+}
+
+        .vertical-menu a:hover {
+            background-color: #ccc;
+        }
+
+        .vertical-menu a.firstPart {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        span.smallBox1 {
+            display: inline-block;
+            width: 200px;
+            height: 250px;
+            padding: 10px;
+            border: 1px solid black;    
+            background-color: white; 
+            margin-left:10px;
+        }
+
+        span p {
+            color:green;
+        }
+
+        .homeList {
+            padding:10px 20px;
+        }
+
+        .topList a{
+            padding:10px 0px;
+            margin-left:55px;
+            display:inline-block;
+
+        }
+
+        .topList ul {
+            background-color: white;
+            border: 1px solid black;
+        }
+        
+        .searchEngine {
+            margin-right:200px;
+            top:30px;
+        }
+        
+        li a{
+            display:inline-block;
+            text-decoration: none;
+            text-align: center;
+            margin-right: 55px;
+            padding:14px 16px;
+            color:black;
+            
+        }
+
+        li {
+            float:left;
+        }
+
+         ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        input.button {
+            background-image: url()
+        }
+
+        i {
+            margin-right:25px;
+            font-size: 55px;
+        }
+
+        .borderBottom {
+            background-color: green;
+            width:95%;
+            padding:10px;
+            margin:0;
+            height:360px
+            
+        }
+
+        .borderBottom i {
+            float:left;
+            font-size: 25px;
+            color:white;
+            margin-left: 25px;
+            margin-top: 40px;
+            display:block;
+        }
+
+        .borderBottom p {
+            color:white;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li a {
+            display:block;
+        }
+
+        .mainButtons {
+            flex-wrap: wrap;
+        }
+
+        .navbar {
+            border-top: 2px solid blue;
+            border-bottom: 2px solid blue;
+            overflow:hidden;
+            margin:0;
+            padding:0;
+            list-style-type: none;
+        }
+
+        @media screen and (max-width: 600px) {
+
+            body {
+                display:flex;
+                flex-direction: column;
+            }
+            .navbar {
+                width:100%;
+                flex-direction: column;
+            }
+
+            .right_info {
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
+
+            .topList {
+                flex-direction: column;
+            }
+
+            .mainButtons {
+                position:relative;
+                right:50px;
+                bottom:50px;
+
+            }
+
+            .vertical-menu {
+                flex-direction: column;
+                display:block;
+                width: 10%;
+            }
+            .slideshowContainer {
+                height:250px;
+            }
+
+            .borderInside {
+                height:100%;
+            }
+
+
+            .topList {
+                flex-direction: column;
+            }
+
+            .blueLine {
+                width:100%;
+            }
+
+            .navbar{
+                border-top: 4px solid blue;
+                width:100%;
+            }
+
+            .searchEngine {
+                position:relative;
+                right:350px;
+            }
+
+
+
+        }
+
+        @media screen and (max-width: 1220px) {
+            .blueLine {
+                width:100%;
+            }
+
+            .vertical-menu {
+                width:10%;
+            }
+
+            .searchEngine {
+                position:relative;
+                right:290px;
+                width:20%;
+            }
+
+            .womanPicture {
+                width:10%;
+                height:10%;
+                position:relative;
+                right:250px;
+            }
+
+            .mainButtons {
+                width:70%;
+                height:50%;
+                position:relative;
+                right:40px;
+                bottom:30px;
+            }
+
+            .instantInfo {
+                position:relative;
+                right:60px;
+                font-size:15px;
+            }
+
+
+        }
+
+        @media screen and (max-width: 1900px) {
+            .navbar {
+                width:100%;
+            }
+
+            .borderInside {
+                height:100%;
+            }
+
+            .womanPicture {
+                width:10%;
+                height:10%;
+                position:relative;
+                right:450px;
+            }
+
+            .oneLine {
+                position:relative;
+                right:400px;
+            }
+
+            .instantInfo {
+                margin-right:500px;
+                
+            }
+        }
+
+        
+
+      
+
+
+
+
+
+        </style>
+    </head>
+    <body>
+       
+    <div class="topList">    
+        <ul>
+            <li><a href="#register"> Hi! Sign in or register </a></li>
+            <li><a href="#dailyDeals">Daily Deals </a></li>
+            <li><a href="#giftCards">Gift Cards </a></li>
+            <li><a href="#contact">Help and Contact </a></li>
+            <li><a href="#phone"><img src="phoneCall.jpg" width="50px" height="40px">Sell your phone for more </a></li>
+            <li><a href="#sell">Sell / My Amazon</a></li>
+            <li><a href="#notification"><img src="notification.png" width="70px" height="40px"></a></li>
+            <li><a href="#basket"><img src="basket.png" width="50px" height="40px"></a></li>
+        </ul>
+    </div>    
+
+        <div class="headingLogo">
+        <h1><img src="amazon-logo-transparent.png"  alt="AmazonLogo" width="300px" height="100px"></h1>
+        </div>
+        
+    <div class="homeList">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#store">Amazon store</a></li>
+            <li><a href="#envelor">Envelor Home and Garden</a></li>
+            <li><a href="#category"><strong>All Categories</strong></a></li>
+        </ul>
+        
+        <p class="oneLine"><a href="#newsletter">Save this seller / Sign up for Store newsletter</p>
+    </div>
+
+    <br><br>
+
+<center>
+    <div class="borderInside">
+        <img src="Envelor-Logo-Retina.png" class="insideLogo" alt="Envelor" width="250px" height="100px">
+ 
+    <div class="searchEngine">
+        <form action="/action_page.php">
+            <input type="text" name="searchEngine">
+            <input type="submit" value="submit">
+        </form>
+    </div>
+        
+        <div class="right_info">
+            <br><br> <img src="woman.jpg" class="womanPicture" width="80px" height="80px" style="position: relative; bottom:130px">
+            <div class="instantInfo">
+            <p style="position: relative; bottom:130px; left:30px">Instant help <br>send an Amazon message <br>for quick customer service</p>
+            </div>
+
+        </div>
+        
+        <br><br><br><br><br><br><br>
+    
+
+        
+
+    <div class="mainlinks">
+        <ul class="navbar">
+            <li><a href="#yoga">Yoga</a></li>
+            <li><a href="#commercial">Commercial Mat</a></li>
+            <li><a href="#printed">Printed Mat</a></li>
+            <li><a href="#pilates">Pilates</a></li>
+            <li><a href="#gym">Gym Mat</a></li>
+            <li><a href="#personal">Personalized Mat</a></li>
+            <li><a href="#wrought">Wrought Mat</a></li>
+            <li><a href="#geomatric">Geomatric Mat</a></li>
+        </ul>
+    </div>
+        
+       
+
+        <br>
+
+        <div class="mainButtons">
+            <button type="button" class="button" onclick=""><i class="fa fa-truck"></i>Shipping</button>
+            <button type="button" class="button" onclick=""><i class="fa fa-lock"></i> Secure Payment</button>
+            <button type="button" class="button" onclick=""><i class="fa fa-gbp"></i>Best UK Seloler</button>
+            <button type="button" class="button" onclick=""><i class="fa fa-refresh"></i> Returns</button>
+        </div>
+
+
+        
+        
+
+        <div class="slideshowContainer">
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <br><br>
+                <img src="terrarium.png" style="width:10%">
+                <div class="text">terrarium</div>
+            </div>
+                      
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <br><br>
+                <img src="carpet.png" style="width:16.5%">
+                <div class="text">Carpet Roll</div>
+            </div>
+                      
+            <div class="mySlides fade">
+              <div class="numbertext"></div>
+              <br><br>
+              <img src="fastDelivery.png" style="width:10%">
+              <div class="text">Fast Delivery</div>
+            </div>
+
+        </div>
+
+        <br>
+
+        <div style="text-align:center">
+             <span class="dot"></span> 
+             <span class="dot"></span> 
+             <span class="dot"></span> 
+        </div>
+
+        <script>
+                var slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 4000); // Change image every 4 seconds
+                }
+                </script>
+            
+            <div class="vertical-menu">
+                <a href="#" class="firstPart">Home</a>
+                <a href="#">Yoga</a>
+                <a href="#">Commercial Mat</a>
+                <a href="#">Printed Mat</a>
+                <a href="#">Pilates</a>
+                <a href="#">Terrarium</a>
+                <a href="#">Personalized Mat</a>
+                <a href="#">Wrought Mat</a>
+                <a href="#">Geometric Mat</a>
+                <a href="#">Welcome Doormat</a>
+                <a href="#">Indoor Outdoor Mat</a>
+                <a href="#">Growing Media</a>
+                <a href="#">Gym Mat</a>
+                <a href="#">Hammock</a>
+                <a href="#">Zafu Cushion</a>
+                <a href="#">Yoga Mats</a>
+                <a href="#">Bolster</a>
+                <a href="#">Other</a>
+
+                <br>
+
+                <img src="paypal.jpg" width="130px" height="100px">
+
+            </div>
+
+            <br>
+        
+        <div>
+          <span class="smallBox1">
+            <img src="daisyWrought.jpg" class= "daisyIron" alt="daisyIron" width="100px" height="100px">
+            <br>
+            <a>daisy wrought iron</a>
+            <br><br>
+            <a>Buy it Now</a>
+            <br><br>
+            <a>Time left: 2h 15min</a>
+            <p>$24.99</p>
+          </span> 
+          <span class="smallBox1">
+            <img src="Floral.jpg"  class= "floralIron" alt="floralIron" width="100px" height="100px">
+            <br>
+            <a>Floral Wrought Iron</a>
+            <br><br>
+            <a>Buy it Now</a>
+            <br><br>
+            <a>Time left: 3h 32min</a>
+            <p>$24.99</p>
+          </span>
+          <span class="smallBox1">
+            <img src="coco.jpg"  class= "cocoIron" alt="cocoIron" width="100px" height="100px">
+            <br>
+            <a>Organic Coco Coir Brick</a>
+            <br><br>
+            <a>Buy it Now</a>
+            <br><br>
+            <a>Time left: 1d 6h 28min</a>
+            <p>$24.99</p>
+          </span>
+          <span class="smallBox1">
+            <img src="nantucket.jpg" class="nantucket" alt="nantucket" width="100px" height="100px">
+            <br>
+            <a>Modeno 27 Inches Nantucket </a>
+            <br><br>
+            <a>Buy it Now</a>
+            <br><br>
+            <a>Time left: 1d 9h 33min </a>
+            <p>$469.00</p>
+            </span>
+        </div>
+
+        <br>
+
+        <div>
+            <span class="smallBox1">
+                <img src="pompeii.jpg"  class= "pompeii" alt="pompeii" width="100px" height="100px">
+                <br>
+                <a>Modeno pompeii tube</a>
+                <br><br>
+                <a>Buy it Now</a>
+                <br><br>
+                <a>Time left: 2d 14h 8min</a>
+                <p>$525.00</p>
+            </span>
+            <span class="smallBox1">
+                <img src="aurora.jpg"  class= "aurora" alt="aurora" width="100px" height="100px">
+                <br>
+                <a>Modeno aurora tube</a>
+                <br><br>
+                <a>Buy it Now</a>
+                <br><br>
+                <a>Time left: 2d 14h 8min</a>
+                <p>$699.00</p>
+            </span>
+            <span class="smallBox1">
+                <img src="lava.jpg"  class= "lava" alt="lava" width="100px" height="100px">
+                <br>
+                <a>Modeno lava tube</a>
+                <br><br>
+                <a>Buy it Now</a>
+                <br><br>
+                <a>Time left: 2d 14h 8min</a>
+                <p>$499.00</p>
+            </span>
+            <span class="smallBox1">
+                <img src="horseCarriage.jpg" class="horseCarriage" alt="horseCarriage" width="100px" height="100px">
+                <br>
+                <a>Horse and Carriage 18 x 30</a>
+                <br><br>
+                <a>Buy it Now</a>
+                <br><br>
+                <a>Time left: 2d 9h 0min</a>
+                <p>$29.99</p>
+            </span>
+        </div>
+
+        <br>
+        
+        <div>
+            <span class="smallBox1">
+                <img src="jefferson.jpg"  class= "jefferson" alt="jefferson" width="100px" height="100px">
+                <br>
+                <a>Modeno 27 Inches Jefferson</a>
+                <br><br><br>
+                <a>Buy it Now</a>
+                <br><br>
+                <a>Time left: 2d 10h 40min</a>
+                <p>$469.00</p>
+            </span>
+            <span class="smallBox1">
+                <img src="York.jpg"  class= "york" alt="york" width="100px" height="100px">
+                <br>
+                <a>Modeno 27 Inches York Propane </a>
+                <br><br>
+                <a>Buy it Now</a>
+                <br><br>
+                <a>Time left: 2d 10h 40min</a>
+                <p>$469.00</p>
+            </span>
+            <span class="smallBox1">
+                <img src="venice.jpg"  class= "venice" alt="venice" width="100px" height="100px">
+                <br>
+                <a>Modeno 34 Inches Venice Propane  </a>
+                <br><br>
+                <a>Buy it Now</a>
+                <br><br>
+                <a>Time left: 2d 10h 40min</a>
+                <p>$699.00</p>
+            </span>
+            <span class="smallBox1">
+                <img src="personalized.jpg" class="personalized" alt="personalized" width="100px" height="100px">
+                <br>
+                <a>Personaliz​ed / Monogramme​d 18" </a>
+                <br><br>
+                <a>Buy it Now</a>
+                <br><br>
+                <a>Time left: 2d 9h 47min</a>
+                <p>$29.99</p>
+            </span>
+        </div>
+        
+        <br>
+        <div>
+            <span class="smallBox1">
+                <img src="elementi.jpg" class="elementi" alt="elementi" width="100px" height="100px">
+                <br>
+                <a>Elementi Outdoor Coffee Fire </a>
+                <br><br>
+                <a>Buy it Now</a>
+                <br><br>
+                <a>Time left: 2d 21h 24min</a>
+                <p>$1,999.00</p>
+            </span>
+            <span class="smallBox1">
+                <img src="elementi.jpg" class="elementi" alt="elementi" width="100px" height="100px">
+                <br>
+                <a>Elementi Outdoor Workshop</a>
+                <br><br>
+                <a>Buy it Now</a>
+                <br><br>
+                <a>Time left: 2d 21h 28min</a>
+                <p>$1,999.00</p>
+            </span>
+            <span class="smallBox1">
+                <img src="anitaBrown.jpg" class="anitaBrown" alt="anitaBrown" width="100px" height="100px">
+                <br>
+                <a>Anita Brown Outdoor Patio </a>
+                <br><br>
+                <a>Buy it Now</a>
+                <br><br>
+                <a>Time left: 2d 21h 30min</a>
+                <p>$479.00</p>  
+            </span>
+            <span class="smallBox1">
+                <img src="silverElementi.jpg" class="silverElementi" alt="silverElementi" width="100px" height="100px">
+                <br>
+                <a>Lunar Bowl Stainless Steel 29'' </a>
+                <br><br>
+                <a>Buy it Now</a>
+                <br><br>
+                <a>Time left: 2d 21h 31min</a>
+                <p>$245.00</p>  
+            </span>
+            
+            <br><br><br><br>
+
+
+        <div class="borderBottom">
+            <ul>
+                <li><a href="#a">Parlin, NJ 08859. USA</a></li>
+                <li><a href="#b">Send Us a message</a></li> 
+            </ul>   
+               
+            
+               
+        </div>
+           
+            
+
+        </div>
+            
+
+    
+    
+    </div>
+</center>
+    </body>
+</html>
